@@ -18,15 +18,15 @@ let plugins = [
   }),
 ];
 
-// if(production) {
-//   plugins = plugins.concat([
-//     new webpack.optimize.UglifyJsPlugin({
-//       mangle: true,
-//       compress: { warnings: false },
-//     }),
-//     new CleanPlugin(),
-//   ]);
-// }
+if(production) {
+  plugins = plugins.concat([
+    new webpack.optimize.UglifyJsPlugin({
+      mangle: true,
+      compress: { warnings: false },
+    }),
+    new CleanPlugin(),
+  ]);
+}
 
 module.exports = {
   entry: `${__dirname}/app/entry.js`,
@@ -40,7 +40,7 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        // exclude: /node_modules/,
         use: ['babel-loader'],
       },
       {

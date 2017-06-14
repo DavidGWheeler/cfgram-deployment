@@ -1,5 +1,5 @@
 {
-  "name": "31-image-uploads",
+  "name": "cfgram frontend",
   "version": "0.1.0",
   "description": "",
   "main": "server.js",
@@ -12,7 +12,7 @@
     "test": "karma start --single-run",
     "test-watch": "karma start --auto-watch",
     "start": "node server.js",
-    "heroku-postbuild": "webpack"
+    "heroku-postbuild": "webpack -p --progress"
   },
   "keywords": [],
   "author": "DavidGWheeler",
