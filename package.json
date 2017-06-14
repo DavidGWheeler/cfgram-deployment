@@ -12,7 +12,7 @@
     "test": "karma start --single-run",
     "test-watch": "karma start --auto-watch",
     "start": "node server.js",
-    "heroku-postbuild": "webpack --progress"
+    "heroku-postbuild": "webpack"
   },
   "keywords": [],
   "author": "DavidGWheeler",
